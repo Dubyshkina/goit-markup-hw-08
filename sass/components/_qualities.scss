@@ -1,0 +1,27 @@
+    .quality-list {
+      list-style-type: none;
+    
+      display: flex;
+      gap: 30px;
+      & .title {
+      color: var(--title-text-color);
+
+      @include font(700, 14px, 1.14);
+      text-transform: uppercase;
+    }
+    }
+  .quality-list__img {
+    width: 270px;
+    height: 120px;
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+     
+  .quality-list__text {
+    @include font(null, 14px, 1.71);
+    font-size: 14px;
+    line-height: 1.71;
+  }

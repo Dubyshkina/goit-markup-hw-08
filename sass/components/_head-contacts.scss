@@ -1,0 +1,29 @@
+.head-contacts {
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+  gap: 30px;
+  letter-spacing: 0.02em;
+}
+.head-contacts__link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  @include font(500, 14px, 1.14);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+  .head-contacts__icon {
+    fill: currentColor;
+  }

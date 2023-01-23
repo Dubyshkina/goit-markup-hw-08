@@ -1,0 +1,30 @@
+.bottom-contacts-item{
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.bottom-contacts-list {
+  list-style-type: none;
+  & .address {
+    @include font(null, 14px, 1.71);
+    font-style: normal;
+    color: var(--primary-white-color);
+    text-decoration: none;
+  }
+  & .item-bottom {
+    @include font(null, 14px, 1.71);
+    font-style: normal;
+    color: var(--bottom-text-color);
+    text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+}
+
+  
