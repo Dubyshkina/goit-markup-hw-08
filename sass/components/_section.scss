@@ -1,15 +1,28 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and(min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   .section .title {
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and(min-width: 768px){
+      text-align: start;
+    }
+    @media screen and(min-width: 1200px){
+      text-align: start;
+    }
   }
   .section-title {
     color: var(--title-text-color);
     @include font(700, 36px, 1.17);
   
     text-align: center;
-  
+    margin-bottom: 30px;
+    @media screen and(min-width: 1200px) {
     margin-bottom: 50px;
+    }
   }
