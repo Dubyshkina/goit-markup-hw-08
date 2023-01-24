@@ -26,10 +26,10 @@
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-background-color);
     width:100%;
-      @media screen and(min-width: 768px) {
+      @include tablet {
       width: calc(50% - 15px);
       }
-      @media screen and(min-width: 1200px){
+      @include desktop {
         width: calc((100% - 90px) / 4);
       }
   }
@@ -42,7 +42,7 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 24px;
-    @media screen and(min-width: 1200px){
+    @include desktop {
       padding-top: 30px;
       padding-bottom: 30px;
     }

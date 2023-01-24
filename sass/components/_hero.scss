@@ -1,23 +1,42 @@
 .hero {
     color: var(--primary-white-color);
     background-color: var(--footer-background-color);
+    background-image: var(--gra), url(../images/hero-bg-mob.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
+  @include tablet {
+    background-image: var(--gra), url(../images/hero-bg-tab.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @include desktop {
     background-image: var(--gra), url(../images/hero-backgr-img.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    margin: 0 auto;
-  
     padding-top: 200px;
     padding-bottom: 200px;
   }
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin: 0 auto;
+  
+    
+  }
   .hero__title {
-    @include font(900, 44px, 1.36);
+    @include font(900, 26px, calc(42 / 26));
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     text-align: center;
-    width: 696px;
+    width: 100%;
+   @include tablet {
+    width: 360px;
+    }
+    @include desktop {
+      @include font(900, 44px, 1.36);
+      width: 696px;
+    }
+   
     margin: 0 auto 30px;
   }
   .hero__button {
@@ -30,15 +49,19 @@
   
     min-width: 216px;
     display: flex;
+    justify-content: center; 
     align-items: center;
-    text-align: center;
+    
     
     cursor: pointer;
   
     border: transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px var(--box-shadow-color);
-  
-    padding: 10px 32px;
     margin: 0 auto;
+    padding: 10px 24px;
+    @include desktop{
+      padding: 10px 32px;
+    }
+    
   }
