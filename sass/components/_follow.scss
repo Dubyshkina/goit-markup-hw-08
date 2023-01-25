@@ -1,18 +1,23 @@
-.follow {
+.follow { 
+  @include desktop{
     margin-left: 70px;
+    }
     & .title {
       @include font(700, 14px, calc(16 / 14));
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: var(--primary-white-color);
-      
-      margin-bottom: 20px;
+      margin-bottom:20px;
+      text-align: center;
+      @include desktop{
+        text-align: start;
+      }
     }
   }
 
   .follow-list {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     gap: 10px;
   }
   .follow-item {

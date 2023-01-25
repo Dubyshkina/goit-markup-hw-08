@@ -10,7 +10,13 @@
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal {
-    width: 528px;
+    width:320px;
+    @include mobile{
+      width:450px;
+    }
+    @include desktop{
+      width:528px;
+    }
     min-height: 581px;
     background-color: var(--primary-background-color);
     padding:40px;
@@ -132,11 +138,14 @@
       }
   }
   .check-text{
-    @include font(400, 14px, calc(24 / 14));
+    @include font(400, 12px, calc(14 / 12));
     color:var(--primary-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    @include desktop{
+      
+    }
     
     display:flex;
      & span{
@@ -152,10 +161,13 @@
     }
     }
   .privacy-link {
-    @include font(400, 14px, calc(24 / 14));
+    @include font(400, 12px, calc(14 / 12));
     color: var(--accent-color);
 
     margin-left: 3px;
+    @include desktop{
+      @include font(400, 14px, calc(24 / 14));
+    }
   }
   .modal-check:checked + .check-text span {
     background-color: var(--accent-color);

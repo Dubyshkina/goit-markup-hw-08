@@ -1,10 +1,22 @@
+.contacts{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop{
+    align-items: flex-start;
+  }
+}
 .bottom-contacts-item{
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 .bottom-contacts-list {
+  text-align: center;
   list-style-type: none;
+  @include desktop{
+    text-align: start;
+  }
   & .address {
     @include font(null, 14px, 1.71);
     font-style: normal;

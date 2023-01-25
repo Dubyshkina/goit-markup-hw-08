@@ -1,5 +1,11 @@
 .header {
     border-bottom: 1px solid var(--header-border-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include tablet{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
   
   .header__container {

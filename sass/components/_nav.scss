@@ -3,12 +3,25 @@
   align-items: center;
 }
 .nav.list{
+    display:none;
     list-style-type: none;
-    display: flex;
     gap: 50px;
     margin-left: 93px;
+    @include tablet{
+      display: flex;
+    }
+    @include desktop{
+      display: flex;
+    }
   }
   .nav__link {
+    display:none;
+    @include tablet{
+      display: flex;
+    }
+    @include desktop{
+      display: flex;
+    }
     color: var(--title-text-color);
     text-decoration: none;
     @include font(500, 14px, 1.14);
