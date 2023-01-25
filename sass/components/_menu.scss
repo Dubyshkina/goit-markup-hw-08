@@ -49,6 +49,8 @@
     text-decoration: none;
     letter-spacing: 0.02em;
     color:var(--title-text-color);
+    
+    
 }
 .mob-menu__link.current {
     color:var(--accent-color);
@@ -57,12 +59,15 @@
     margin-bottom:64px;
 }
 .mob-contacts__tel{
-    @include font(500, 34px, calc( 40 / 34));
+    @include font(500, 30px, calc( 40 / 30));
     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-decoration: none;
     display: block;
     margin-bottom: 32px;
+    @include mobile{
+        @include font(500, 34px, calc( 40 / 34));
+    }
 }
 .mob-contacts__mail{
     @include font(500, 24px, calc(28 / 24));
@@ -75,10 +80,13 @@
     display:flex;
 }
 .mob-soc__link{
-    @include font(500, 18px, calc(22 / 18));
-    letter-spacing: 0.02em;
+    @include font(500, 14px, calc(18 / 14));
+     letter-spacing: 0.02em;
     color: var(--accent-color);
     text-decoration: none;
+    @include mobile{
+        @include font(500, 18px, calc(22 / 18));
+    }
     
 }
 .mob-soc__item:not(:last-child){

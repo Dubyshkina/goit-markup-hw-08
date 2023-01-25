@@ -338,13 +338,20 @@ img {
 
 .mob-contacts__tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 30px;
+  line-height: 1.3333333333;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
   display: block;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 480px) {
+  .mob-contacts__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .mob-contacts__mail {
@@ -363,11 +370,18 @@ img {
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 14px;
+  line-height: 1.2857142857;
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .mob-soc__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 
 .mob-soc__item:not(:last-child) {
