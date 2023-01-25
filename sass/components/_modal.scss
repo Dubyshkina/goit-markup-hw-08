@@ -11,13 +11,14 @@
   }
   .modal {
     width:320px;
+    height: 609px;
     @include mobile{
       width:450px;
     }
     @include desktop{
       width:528px;
+      height: 581px;
     }
-    min-height: 581px;
     background-color: var(--primary-background-color);
     padding:40px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -144,7 +145,7 @@
     align-items: center;
     justify-content: center;
     @include desktop{
-      
+      @include font(400, 14px, calc(24 / 14));
     }
     
     display:flex;

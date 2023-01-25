@@ -1035,7 +1035,7 @@ img {
 
 .modal {
   width: 320px;
-  min-height: 581px;
+  height: 609px;
   background-color: var(--primary-background-color);
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1056,6 +1056,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 581px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -1195,6 +1196,13 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .check-text span {
   width: 16px;
