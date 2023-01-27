@@ -1,10 +1,18 @@
 .filter {
     list-style-type: none;
-    margin-bottom: 50px;
-  
+    margin-bottom: 40px;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
+    @include tablet{
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+    @include desktop{
+      margin-bottom: 50px;
+    }
+    
+    
   }
   .filter .buttons {
     color: var(--title-text-color);
@@ -21,8 +29,11 @@
   
     border: transparent;
     border-radius: 4px;
-  
+    padding:6px 22px;
+    @include tablet{
     padding: 6px 25px;
+    }
+    
   
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
